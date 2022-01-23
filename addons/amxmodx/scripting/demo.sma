@@ -1,6 +1,6 @@
 #include <amxmodx>
 
-new const DemoName[] = "Public"
+new const DemoName[] = "Public";
 
 public plugin_init()
 {
@@ -18,7 +18,7 @@ public DemoRecording(id)
 	if(!is_user_connected(id)) return;
 	
 	new CurrentTime[32];
-	
+
 	get_time("%d.%m.%Y", CurrentTime, charsmax(CurrentTime));
 	
 	client_cmd(id, "stop; record %s", DemoName);
