@@ -13,8 +13,7 @@ public client_putinserver(id)
 }
 
 public DemoRecording(id)
-{
-	
+{	
 	if(!is_user_connected(id)) return;
 	
 	new CurrentTime[32];
